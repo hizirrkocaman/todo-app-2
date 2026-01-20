@@ -12,7 +12,7 @@ This project was developed as a learning and portfolio project to deeply underst
 <a href="https://todo-app-2-ruby.vercel.app/" target="_blank" rel="noopener noreferrer">
   <img width="891" height="651" src="https://github.com/user-attachments/assets/68145f8e-b299-4e65-a48c-5890892911ff" alt="Todo App Screenshot" />
 </a>
----
+
 
 ## ✨ Features
 
