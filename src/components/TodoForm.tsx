@@ -1,4 +1,4 @@
-import { useState,useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 type TodoFormProps = {
   onAdd: (text: string) => void;
@@ -13,7 +13,6 @@ const TodoForm = ({ onAdd, error }: TodoFormProps) => {
     inputRef.current?.focus();
   }, []);
 
-
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     onAdd(text);
@@ -21,17 +20,22 @@ const TodoForm = ({ onAdd, error }: TodoFormProps) => {
   }
 
   return (
-    <form className="flex flex-col gap-2" onSubmit={handleSubmit}>
+    <form className="flex flex-col gap-2 " onSubmit={handleSubmit}>
       <div className="flex gap-2">
         <input
-        ref={inputRef}
-        className="p-2 border w-full border-gray-400 rounded"
-        type="text"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-        placeholder="Add new todo"
-      />
-      <button className="bg-violet-600 text-white px-4 cursor-pointer rounded" type="submit">Add</button>
+          ref={inputRef}
+          className="p-2 border w-full border-gray-400 rounded"
+          type="text"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          placeholder="Add new todo"
+        />
+        <button
+          className="bg-violet-600 text-white px-4 cursor-pointer rounded"
+          type="submit"
+        >
+          Add
+        </button>
       </div>
       {error && <p className="text-red-500">{error}</p>}
     </form>

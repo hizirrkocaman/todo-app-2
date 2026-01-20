@@ -134,8 +134,8 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-linear-to-br from-slate-900 via-purple-900 to-slate-900">
-      <div className="max-w-xl w-116 flex flex-col bg-white/95 shadow-2xl rounded-2xl p-6 gap-2">
+    <div className="min-h-screen flex justify-center items-center bg-linear-to-br from-slate-900 via-purple-900 to-slate-900 px-4 py-10">
+      <div className="mx-auto w-full max-w-xl  flex flex-col bg-white/95 shadow-2xl rounded-2xl sm:p-6 gap-2 p-4">
         <h1 className="text-3xl text-slate-900 font-bold">Todo App</h1>
         <TodoForm onAdd={addTodo} error={error} />
         <TodoFilters

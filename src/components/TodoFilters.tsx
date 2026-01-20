@@ -9,10 +9,10 @@ type TodoFilterProps = {
   onClearCompleted: () => void;
 };
 
-const baseClass = "px-3 py-1 rounded cursor-pointer transition-colors"
+const baseClass = "px-3 py-1 rounded cursor-pointer transition-colors";
 
 const activeClass = "bg-black text-white";
-const inActiveClass = "bg-gray-200 text-black"
+const inActiveClass = "bg-gray-200 text-black";
 
 const TodoFilters = ({
   filter,
@@ -24,9 +24,11 @@ const TodoFilters = ({
 }: TodoFilterProps) => {
   return (
     <div className="flex flex-col gap-2 mt-3">
-      <div className="flex gap-3">
+      <div className="flex flex-wrap gap-3">
         <button
-          className={`${baseClass} ${filter === "all" ? activeClass : inActiveClass }`}
+          className={`${baseClass} ${
+            filter === "all" ? activeClass : inActiveClass
+          }`}
           type="button"
           onClick={() => onChange("all")}
           disabled={filter === "all"}
@@ -34,7 +36,9 @@ const TodoFilters = ({
           All
         </button>
         <button
-          className={`${baseClass} ${filter === "active" ? activeClass : inActiveClass }`}
+          className={`${baseClass} ${
+            filter === "active" ? activeClass : inActiveClass
+          }`}
           type="button"
           onClick={() => onChange("active")}
           disabled={filter === "active"}
@@ -42,7 +46,9 @@ const TodoFilters = ({
           Active
         </button>
         <button
-          className={`${baseClass} ${filter === "completed" ? activeClass : inActiveClass }`}
+          className={`${baseClass} ${
+            filter === "completed" ? activeClass : inActiveClass
+          }`}
           type="button"
           onClick={() => onChange("completed")}
           disabled={filter === "completed"}
