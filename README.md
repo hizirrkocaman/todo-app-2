@@ -6,10 +6,9 @@ This project was developed as a learning and portfolio project to deeply underst
 
 👉 **Live Demo:**  
 <a href="https://todo-app-2-ruby.vercel.app/" target="_blank" rel="noopener noreferrer">
-  Live Demo
+  Live Demo: https://todo-app-2-ruby.vercel.app
 </a>
-<img width="812" height="616" alt="Screenshot 2026-01-20 at 23 55 41" src="https://github.com/user-attachments/assets/47c8ddda-9c3e-4a70-8657-b3b189ab58e0" />
-<img width="891" height="651" alt="Todo-App" src="https://github.com/user-attachments/assets/68145f8e-b299-4e65-a48c-5890892911ff" />
+
 
 <a href="https://todo-app-2-ruby.vercel.app/" target="_blank" rel="noopener noreferrer">
   <img src="./screenshot.png" alt="Todo App Screenshot" />
